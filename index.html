@@ -8,40 +8,52 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<body>
-    <div class="big-container">
-        <div class="cover-container">
-            <div class="container-2">
-                <div class="big-box">Pixel size</div>
-                <div class="sizes" id="sizes">
-                    <div class="small-size">
-                        <input type="radio" name="size" id="small"><p>Small</p>
-                    </div> 
-                    <div class="medium-size">
-                        <input type="radio" name="size" id="medium"><p>Medium</p>
+<body id="body">
+    <div class="big-container" id="body1">
+        <div class="small-container">
+            <div class="cover-container">
+                <div class="container-2">
+                    <div class="big-box">Pixel size</div>
+                    <div class="sizes" id="sizes">
+                        <div class="small-size">
+                            <input type="radio" name="size" id="small">
+                            <p>Small</p>
+                        </div>
+                        <div class="medium-size">
+                            <input type="radio" name="size" id="medium">
+                            <p>Medium</p>
+                        </div>
+                        <div class="large-size">
+                            <input type="radio" name="size" id="large">
+                            <p>Large</p>
+                        </div>
                     </div>
-                    <div class="large-size">
-                        <input type="radio" name="size" id="large"><p>Large</p>
+                    <div class="big-box">Other Options</div>
+                    <div class="sizes padding">
+                        <!-- <p id="color">Color</p> -->
+                        <p> <label for="color">Color :</label>
+                            <input type="color" name="" id="color"></p>
+    
+                        <p id="erase">Erase</p>
+                        <p id="clear">Clear</p>
                     </div>
                 </div>
-                <div class="big-box">Other Options</div>
-                <div class="sizes padding" >
-                    <!-- <p id="color">Color</p> -->
-                    <p>  <label for="color">Color :</label>
-                        <input type="color" name="" id="color"></p>
-                  
-                    <p id="erase">Erase</p>
-                    <p id="clear">Clear</p>
+            </div>
+            <div class="cover-container-2">
+                <div class="container" id="container">
                 </div>
             </div>
         </div>
-        <div class="cover-container-2">
-            <div class="container" id="container">
-            </div>
+    
+     
+        <div class="copyright">
+            <p>Built by sekunayo</p>
         </div>
     </div>
-    <div class="copyright">
-        <p>Built by sekunayo</p>
+    <div id="modal">
+        <div id="modal-content">
+            <p>Please view this page using a Laptop or Desktop</p>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

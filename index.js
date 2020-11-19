@@ -91,3 +91,43 @@ colorElement.addEventListener("click", function(){
           })
         }
 })
+let modal = document.getElementById("modal");
+let body = document.getElementById("body1");
+
+   window.addEventListener("resize", function(){
+    if(window.outerWidth < 1280){
+      modal.style.display ="flex";
+      body.style.display = "none";
+      
+    }
+    else{
+      modal.style.display ="none";
+      body.style.display = "flex";
+      
+    }
+
+})
+window.addEventListener("'DOMContentLoaded'", function(){
+
+  if(window.outerWidth < 1280){
+    modal.style.display ="flex";
+    body.style.display = "none";
+    
+  }
+  else{
+    modal.style.display ="none";
+    body.style.display = "flex";
+    
+  }
+
+})
+if(window.outerWidth < 1280){
+  modal.style.display ="flex";
+  body.style.display = "none";
+  
+}
+else{
+  modal.style.display ="none";
+  body.style.display = "flex";
+  
+}
